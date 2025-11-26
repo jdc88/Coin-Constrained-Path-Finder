@@ -1,3 +1,4 @@
+# main.py
 import tkinter as tk
 from graph import create_sample_graph
 from gui import PathFinderGUI
