@@ -678,11 +678,11 @@ class PathFinderGUI:
                     # Draw edge labels
                     mx, my = (x1+x2)//2 + 100, (y1+y2)//2 + 50
                     self.canvas.create_text(mx, my-15, 
-                                          text=f"D:{edge_info['distance']}",
-                                          fill="#2C0703", font=("Arial", 9))
+                                          text=f"Distance: {edge_info['distance']}",
+                                          fill="#EBD4CB", font=("Arial", 9))
                     self.canvas.create_text(mx, my+5, 
-                                          text=f"C:{edge_info['coins']}",
-                                          fill="#890620", font=("Arial", 9, "bold"))
+                                          text=f"Coins: {edge_info['coins']}",
+                                          fill="#DAA094", font=("Arial", 9, "bold"))
         
         # Draw cities
         for city_name in self.graph.get_city_names():
