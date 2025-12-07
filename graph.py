@@ -55,7 +55,7 @@ def create_sample_graph():
         "F": (6, 500, 300),
         "G": (7, 100, 500),
         "H": (8, 300, 500),
-        "I": (0, 500, 500)      # Goal city with heuristic 0
+        "I": (9, 500, 500)      
     }
     
     for name, (h, x, y) in cities_data.items():
