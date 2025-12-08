@@ -155,19 +155,21 @@ class PathFinderGUI:
         self.reset_btn.pack(pady=5)
 
  
+       # Game Status Title (OUTSIDE the frame)
+        tk.Label(control_frame, text="Game Status", font=("Almendra", 25, "bold"), bg="#2C0603", fg="#EBD4CB").pack(pady=(0, 8))
+
         # Info Display with Scrollbar
-        self.info_frame = tk.Frame(control_frame, bg="#EBD4CB", relief=tk.GROOVE, bd=2, width=400, height=400)
+        self.info_frame = tk.Frame(control_frame, bg="#EBD4CB",
+                                relief=tk.GROOVE, bd=2,
+                                width=400, height=400)
         self.info_frame.pack(pady=5, expand=True)
 
         self.info_frame.pack_propagate(False)
 
-        
-        tk.Label(self.info_frame, text="Game Status", font=("Almendra", 25, "bold"),
-                bg="#EBD4CB", fg="#2C0603").pack(pady=8)
-        
         # Create a frame to hold the text widget and scrollbar
         text_container = tk.Frame(self.info_frame, bg="#EBD4CB")
         text_container.pack(padx=5, pady=5, fill=tk.BOTH, expand=True)
+
         
         # Create scrollbar
         scrollbar = tk.Scrollbar(text_container, bg="#EBD4CB", troughcolor="#EBD4CB")
